@@ -1,0 +1,79 @@
+
+Programmieraufgaben
+
+Das Template enthält gekennzeichnete Lücken für Aufgaben.
+Suchen Sie im Template nach dem Stichwort "START exercise XXX", um die Einstiegspunkte für Ihre Aufgaben zu finden.
+Als Aufgabennahme steht XXX z.B für: Bresenham, Scanline, Z-Buffer, etc. . 
+ 
+Für manche Aufgaben gibt es mehre zu modifizierende Stellen in Code, sie werden also mehrere Einstiegspunkte finden.
+Bei manchen Aufgaben gibt es absichtlich keinen Einstiegspunkt, es ist dann Teil der Aufgabe diesen zu wählen.
+
+Das Ende einer Aufgabenlücke ist gekennzeichnet mit "END exercise XXX". Ist kein Ende gesetzt ist das Ende 
+der Funktion oder außerhalb von Funktionen das Ende des Module gemeint. 
+
+Sollen Aufgaben nicht bearbeitet werden, können entweder die Lücken belassen werden, oder Sie müssen mit vorgegebenen Lösungen 
+gefüllt werden, falls andere Aufgaben darauf aufbauen. Die Abhängigkeiten der Pflichtaufgaben entsprechen ihrer Reihenfolge.
+
+Pflichtaufgaben:
+1) Polycount (5 Punkte): Zählen Sie die Anzahl der dargestellten Polygone. Dazu gibt es keine Marker fügen Sie den Befehl "polycount++;" an der richtigen Stelle im Code in.
+2) Bresenham (15 Punkte): Liniensegmente auf einem Raster zeichnen.  
+3) Scanline (15 Punkte): Polygone füllen.
+4) Z-Buffer (15 Punkte): Tiefen-Test inklusive Berechnung der Normalen.
+5) Shear (10 Punkte): 3D Scherung eines Modells.
+
+Modelle und Geometrie:
+6) Vertex-Normals (10 Punkte): Berechnen der Normalen für die Vertices aus dem Mesh. 
+7) Sphere (10 Punkte): Prozedurale Generierung einer Kugel.
+8) Back-Face Culling (5 Punkte): Polygone/Faces mit der Rückseite zur Kamera werden übergangen.
+9) Clean-Data (10 Punkte): Zusammenlegen von doppelten, redundanten Vertices.
+
+Scenegraph and Animation:
+10) Scenegraph (10 Punkte): Anlegen einer Hierarchie von drei Würfeln. 
+11) Rotating-Planet-Animation (10 Punkte): Um eine kleine, aber dichte, Sonnen rotiert ein Planet mit einem Mond oder Ring der auch um diesen rotiert (mit Kugeln oder Würfeln).
+12) Move-Animation (10 Punkte): Objekte bewegen sich zufällig innerhalb eines Würfels. An den Seitenflächen werden Sie reflektiert. 
+
+Texture:
+13) Texture (20 Punkte): UV-Koordinaten interpolieren und Texturen von einem Bild samplen. 
+14) Cube-Dice-Texture (10 Punkte): Eine Textur für einen Würfel mit sechs unterschiedlichen Seiten. 
+15) Sphere-Earth-Texture (10 Punkte): UV-Koordinaten auf der Kugel für eine Erd-Textur anlegen. 
+16) Procedural-Texture (10 Punkte): Texturen algorithmisch erzeugen, ohne Bilder zu laden.
+
+Shading:
+17) Flat-Shading (10 Punkte): Faces mit Licht und Normalen.
+18) Shading (gegeben): Bi-lineare Interpolation.
+19) Gouraud-Shading (20 Punkte): Interpolation der Lichtintensität.
+20) Phong-Shading (20 Punkte): Interpolation der Normalen.
+21) Toon-Shading (10 Punkte): Interpolation der Normalen.
+
+Weitere mögliche nicht vorbereitet Projektaufgaben sind:
+- Zentralprojektion mit Viewing Frustum (10 Punkte)
+- Clipping am Frustum, wie im Modul beschrieben (10 Punkte)
+- Kurven: Hermite, Bezier, B-Splines, NURBS (10 Punkte)
+- Gekrümmte Flächen (10 Punkte)
+- Transparenz (5 Punkte)
+- Andere Algorithmen aus dem Online-Modul 
+
+Algorithmen, die nicht im Online-Modul besprochen werden:
+- Barycentric interpolation (10 Punkte)
+- Metaballs (20 Punkte)
+- Subdivision-Surfaces (10 Punkte)
+- prozedurale Modellierung (z.B. Pflanzen)  (10 Punkte)
+- Mip-Mapping (10 Punkte)
+- Pespektivenkorrektur bei der Texturierung für Zentralprojektion (5 Punkte)
+
+
+Arbeitsumgebung und Workflow
+
+Arbeiten können Sie mit Eclipse mit dem Aptana-Plugin. 
+Achten Sie bei der Formatierung auf die Vorgaben von JS-Lint.
+Dazu gibt es ein Eclipse-Plugin.
+
+Ausführen sollten Sie die Anwendung 
+mit Chrome mit den Chrome Entwicker Tools (Empfehlung).
+oder mit Fireforx mit Firebug. 
+
+Beim Debuggen müssen Sie zunächte einen Breakpoint in die Datei start.js
+setzen, weil Sie als einzige direkt geladen wird. Erst nach dem erreichen 
+dieses Breakpoints haben Sie im Browser Zugang zu den anderen JS Dateien.
+Alternativ nutzen Sie das "debugger;" statement im source code.
+
